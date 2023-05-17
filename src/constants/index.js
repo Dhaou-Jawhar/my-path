@@ -156,27 +156,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Your 3D work is exceptional! The attention to detail and mastery of software are impressive, resulting in a stunning and immersive experience. Keep up the great work!",
-    name: "Yosra",
-    designation: "Teacher",
-    company: "ESPRIT",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Jawhar , Your 3D work is exceptional! The attention to detail and mastery of software are impressive, resulting in a stunning and immersive experience. Keep up the great work!",
+    name: "Ahmed",
+    designation: "Developer",
+    company: "Steam",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
   {
     testimonial:
-      "Your gaming artwork is amazing! Your creativity and attention to detail are impressive, and your ability to capture the essence of each game is unmatched.",
-    name: "Mohamed",
-    designation: "COO",
-    company: "TimeLess",
+      "Jawhar , Your gaming artwork is amazing! Your creativity and attention to detail are impressive, and your ability to capture the essence of each game is unmatched.",
+    name: "Amir",
+    designation: "Gamer",
+    company: "Epiv Games",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "Your commercial video is amazing! The presentation and visuals are stunning and engaging, and it's clear a lot of effort went into creating it.",
-    name: "Ons",
-    designation: "Teacher",
-    company: "ESPRIT",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I was particularly impressed by the way the video encapsulated the essence of your camp center, highlighting its diverse range of activities",
+    name: "Imen",
+    designation: "Manager",
+    company: "Camp Center Bni Mtir",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
   },
 ];
 
