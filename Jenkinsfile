@@ -4,7 +4,7 @@ pipeline {
         stage('Display Greeting') {
             steps {
                 script {
-                    def greeting = . 
+                    def greeting = """. 
   ∧＿∧　
 （ ºωº )つ━☆・*。
 ⊂|　　 | 　　　・゜+.
