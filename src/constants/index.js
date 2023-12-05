@@ -185,18 +185,18 @@ const projects = [
   {
     name: "Devops - Kaddem",
     description:
-      "A restaurant management desktop application and student housing",
+      "A DevOps CI/CD project involving a full stack application combining Spring Boot and Angular",
     tags: [
       {
         name: "Java-Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "Jenkins",
+        name: "Jenkins-Vagrant",
         color: "green-text-gradient",
       },
       {
-        name: "Kubernetes",
+        name: "Kubernetes-ArgoCD",
         color: "pink-text-gradient",
       },
     ],
