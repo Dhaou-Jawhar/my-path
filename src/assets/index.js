@@ -23,12 +23,13 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/timeless.png";
-import tesla from "./company/tesla.png";
+import timeless from "./company/timeless.png";
+import azur from "./company/azur.png";
 
 import carrent from "./aurora.gif";
 import jobit from "./artycamp.gif";
 import tripguide from "./SmartEsprit.gif";
+import devops from "./devops.gif";
 
 export {
   logo,
@@ -54,9 +55,10 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
-  tesla,
+  timeless,
+  azur,
   carrent,
   jobit,
   tripguide,
+  devops,
 };

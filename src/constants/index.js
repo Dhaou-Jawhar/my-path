@@ -16,12 +16,13 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
+  timeless,
+  azur,
   shopify,
   carrent,
   jobit,
   tripguide,
+  devops,
   threejs,
 } from "../assets";
 
@@ -100,22 +101,9 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Angular Spring Developer",
-    company_name: "TimeLess",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "Juin 2022 - Aout 2023",
-    points: [
-      "Developed a full-stack scan application using Spring Boot and Angular",
-      "Designed the backend architecture using Java and Spring Boot, providing RESTful APIs for the frontend to consume.",
-      "Created the user interface for the application using Angular, allowing users to interact with the application and scan documents.",
-      "Implemented a MySQL database to store user data and scan results, enabling users to access their scan history and results at any time.",
-    ],
-  },
-  /* {
-    title: "Frontend Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "NodeJs React Developer",
+    company_name: "Azur Consulting",
+    icon: azur,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -126,6 +114,19 @@ const experiences = [
     ],
   },
   {
+    title: "Angular Spring Developer",
+    company_name: "TimeLess",
+    icon: timeless,
+    iconBg: "#383E56",
+    date: "Juin 2022 - Aout 2023",
+    points: [
+      "Developed a full-stack scan application using Spring Boot and Angular",
+      "Designed the backend architecture using Java and Spring Boot, providing RESTful APIs for the frontend to consume.",
+      "Created the user interface for the application using Angular, allowing users to interact with the application and scan documents.",
+      "Implemented a MySQL database to store user data and scan results, enabling users to access their scan history and results at any time.",
+    ],
+  },
+  /*{
     title: "Web Developer",
     company_name: "Shopify",
     icon: shopify,
@@ -182,6 +183,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Devops - Kaddem",
+    description:
+      "A restaurant management desktop application and student housing",
+    tags: [
+      {
+        name: "Java-Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Jenkins",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Kubernetes",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: devops,
+    source_code_link: "https://github.com/Dhaou-Jawhar/Devops-Kaddem-SE2/tree/Branch-Jawhar",
+  },
+  {
     name: "Aurora",
     description:
       "A Full Stack web application for discovering unique camping experiences and Renting camping gears",
@@ -200,7 +222,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Dhaou-Jawhar/Pidev-Aurora",
+    source_code_link: "https://github.com/Dhaou-Jawhar/Pidev-Aurora/tree/E-SHOP",
   },
   {
     name: "ArtyCamp",
@@ -244,6 +266,7 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/Dhaou-Jawhar/APP-SMART-ESPRIT",
   },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
