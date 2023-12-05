@@ -25,6 +25,49 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    // parametre mta3 el animation ( TEXT ) -> Return
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [text, setText] = useState('');
+    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [index, setIndex] = useState(1);
+    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+    const period = 2000;
+  
+    useEffect(() => {
+      let ticker = setInterval(() => {
+        tick();
+      }, delta);
+  
+      return () => { clearInterval(ticker) };
+    }, [text])
+  
+    const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+  
+      setText(updatedText);
+  
+      if (isDeleting) {
+        setDelta(prevDelta => prevDelta / 2);
+      }
+  
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setIndex(prevIndex => prevIndex - 1);
+        setDelta(period);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setIndex(1);
+        setDelta(500);
+      } else {
+        setIndex(prevIndex => prevIndex + 1);
+      }
+    }
+      // End of parametre mta3 el animation ( TEXT )
+
   return (
     <nav
       className={`${
@@ -45,7 +88,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Dhaou Jawhar &nbsp;
-            <span className='sm:block hidden'> | Web Developer</span>
+            <span className='sm:block hidden'> | <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></span>
           </p>
         </Link>
 
